@@ -51,7 +51,7 @@ public class User implements Serializable {
     @Basic(optional = false)
     @Column(name = "password")
     private String password;
-    @JoinColumn(name = "userRole", referencedColumnName = "id") 
+    @JoinColumn(name = "userRole", referencedColumnName = "role_id") 
     @ManyToOne(optional = false, fetch = FetchType.EAGER) 
     private Role role;
 
